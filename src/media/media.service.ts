@@ -10,7 +10,7 @@ export class MediaService {
 		folder = 'default'
 	): Promise<IMediaResponse> {
 		const uploadFolder = `${path}/uploads/${folder}`;
-		console.log(uploadFolder);
+		console.log(`${path}/uploads/${folder}`);
 		await ensureDir(uploadFolder);
 
 		await writeFile(
